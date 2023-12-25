@@ -1,6 +1,6 @@
 /* selector { propiedad: valor} */
 
-/* selectores
+/* Referencias: selectores
 ID: se usa una sola vez, en bloques grandes
 CLASS: es reutilizable - En html class="miClase" - en csss .miClase {color:green; }
 ETIQUETA: <p> <h1>
@@ -13,18 +13,46 @@ p#miId { color: blue; }
 
 /* Mi codigo CSS */
 
-ul {
-    list-style: none;
-}
-
-h1 .titulo {
-    color: #A63232;
-}
-
-.bgNosotros {
-    background-color: #FFFFFF;
-}
+/* CSS para todas las paginas */
 
 html {
     font-family: 'Roboto', sans-serif;
 }
+
+
+ul { 
+    list-style: none; /* borro los bullets */
+}
+
+.logo {
+    width: 150px; /* establezco el ancho del logo */
+}
+
+h1 .titulo {
+    color: #A63232;  /* Color del Titulo cuando es H1 */
+}
+
+.bgNosotros {
+    background-color: #FFFFFF; /* para probar colores cuando logre alinear el navigation */
+}
+
+
+/* CSS para footer */
+
+footer .socials {
+    width: 30px; /* Limito el tamaño de las imagenes de las redes sociales */
+}
+
+footer p {
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+
+/* CSS para pagina de contacto */
+
+form#contacto label {
+    color: #A63232;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
