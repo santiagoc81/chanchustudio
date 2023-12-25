@@ -1,0 +1,30 @@
+/* selector { propiedad: valor} */
+
+/* selectores
+ID: se usa una sola vez, en bloques grandes
+CLASS: es reutilizable - En html class="miClase" - en csss .miClase {color:green; }
+ETIQUETA: <p> <h1>
+
+p { color: green; }
+p.miClase { color: red; }
+p#miId { color: blue; }
+
+*/
+
+/* Mi codigo CSS */
+
+ul {
+    list-style: none;
+}
+
+h1 .titulo {
+    color: #A63232;
+}
+
+.bgNosotros {
+    background-color: #FFFFFF;
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+}
