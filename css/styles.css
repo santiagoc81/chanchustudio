@@ -15,6 +15,13 @@ p#miId { color: blue; }
 
 /* CSS para todas las paginas */
 
+/* Hacemos un reset */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box; /* Con esto hacemos que cada tamaño decaja de contenido ya incluya podding y margin */
+}
+
 html {
     font-family: 'Roboto', sans-serif;
 }
@@ -34,6 +41,54 @@ h1 .titulo {
 
 .bgNosotros {
     background-color: #FFFFFF; /* para probar colores cuando logre alinear el navigation */
+}
+.nuestrosServicios{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.servicio {
+    border: 1px black solid;
+    width: 400px;
+    padding: 30px;
+    margin: 15px;
+    position: relative;
+    
+    
+}
+.servicioMasPedido {
+position: absolute;
+top:2px;
+right:5px;
+padding: 5px;
+background-color: #A63232;
+box-shadow: 2px 2px 2px black;
+border-radius: 25%;
+
+}
+/* CSS para menu de navegacion */
+.navMenu {
+    z-index: 100;
+    position: sticky;
+    top: 0px;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navMenu ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navMenu li {
+    background-color: #A63232;
+    color: #ffffff;
+    border: 1px black solid;
+    width: 90px;
+    height: 50px;
+    text-decoration: none;
 }
 
 
