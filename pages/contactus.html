@@ -7,26 +7,28 @@
     <title>chanchustudio :: Soluciones para su negocio</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="../css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <nav class="bgNosotros">
+        <nav class="navMenu">
             <a href="#">
-                <img src="../img/logo.png" alt="Logo Chanchustudio">
+                <img class="logo" src="../img/logo.png" alt="Logo Chanchustudio">
             </a>
             <ul>
-                <h2>Mi lista</h2>
                 <li><a href="../index.html">Inicio </a></li>
-                <li><a href="../pages/about.html">Nosotros </a></li>
-                <li><a href="../pages/contactus.html">Contacto </a></li>
-                <li><a href="../pages/customers.html">Clientes </a></li>
-                <li><a href="../pages/location.html">Donde Estamos </a></li>
+                <li><a href="./about.html">Nosotros </a></li>
+                <li><a href="./services.html">Servicios </a></li>
+                <li><a href="./customers.html">Clientes </a></li>
+                <li><a href="./contactus.html">Contacto </a></li>
 
             </ul>
         </nav>
         <section>
-            <img src="./img/banner1.png">
+            <img src="../img/banner1.png" alt="banner principal">
         </section>
     </header>
     <main>
@@ -39,14 +41,14 @@
         </div>
         <div>
             <form id="contacto">
-                <label>Nombre</label>
-                <input type="text" name="nombre" id="">
-                <label>email</label>
-                <input type="email" name="nombre" id="">
-                <label>Telefono</label>
-                <input type="text" name="nombre" id="">
-                <label>Comentarios</label>
-                <input type="text" name="nombre" id="">
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" id="nombre">
+                <label for="email">email</label>
+                <input type="email" name="email" id="email">
+                <label for="telefono">Telefono</label>
+                <input type="number" name="telefono" id="telefono">
+                <label for="comments">Comentarios</label>
+                <input type="text" name="comments" id="comments">
                 <input type="submit" value="Enviar">
 
             </form>
