@@ -1,16 +1,5 @@
 /* selector { propiedad: valor} */
 
-/* Referencias: selectores
-ID: se usa una sola vez, en bloques grandes
-CLASS: es reutilizable - En html class="miClase" - en csss .miClase {color:green; }
-ETIQUETA: <p> <h1>
-
-p { color: green; }
-p.miClase { color: red; }
-p#miId { color: blue; }
-
-*/
-
 /* Mi codigo CSS */
 
 /* CSS para todas las paginas */
@@ -44,6 +33,7 @@ h1.titulo {
 }
 
 /* CSS para pagina index */
+
 .cajasDestacadas{
     display: flex;
     flex-wrap: wrap;
@@ -86,6 +76,7 @@ h1.titulo {
 
 
 /* CSS para pagina services */
+
 .nuestrosServicios{
     display: flex;
     flex-wrap: wrap;
@@ -105,9 +96,10 @@ h1.titulo {
     top:2px;
     right:5px;
     padding: 5px;
-    background-color: #A63232;
+    background-color:red;
     box-shadow: 2px 2px 2px black;
     border-radius: 25%;
+    color: #FFFFFF;
 
 }
 
@@ -121,30 +113,10 @@ h1.titulo {
     background-color: white;
     justify-content: space-around;
     width: 100%;
+    font-size: 30px;
 }
 
-.navMenu ul {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.navMenu li {
-    color: #ffffff;
-    width: 90px;
-    height: 50px;
-    text-decoration: none;
-    justify-content: center;
-    display: flex;
-}
-
-.navMenu a {
-    text-decoration: none;
-    color: #000000;
-}
-
-.navMenu a:hover {
-    text-decoration: none;
+.navMenu a:hover{
     color: #A63232;
 }
 
@@ -174,6 +146,16 @@ h1.titulo {
 .sliderPrincipal img{
     max-width: 100%;
 }
+
+.iconColor {
+    color: #A63232;
+}
+
+.logosEmpresas {
+    width: 140px;
+}
+
+
 /* CSS para footer con grillas */
 
 .grid-container{
@@ -201,3 +183,17 @@ form#contacto label {
     font-weight: 600;
 }
 
+@media only screen and (max-width:500px) {
+    /* Que en mobile el texto sea mas chico */
+    .navMenu a {
+        font-size: 15px;
+    }
+
+    .navMenu {
+        background-color: lightgrey;
+    }
+
+    .sliderPpal {
+        display: none;
+    }
+}
