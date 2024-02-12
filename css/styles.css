@@ -1,217 +1,181 @@
+@charset "UTF-8";
+/* Imports */
+/* Colores */
+/* CSS De todo el header*/
+.logo {
+  width: 150px; /* establezco el ancho del logo */
+}
 
+.navMenu {
+  display: flex;
+  z-index: 100;
+  position: sticky;
+  top: 0px;
+  background-color: white;
+  justify-content: space-around;
+  width: 100%;
+  font-size: 30px;
+}
 
-/*# sourceMappingURL=styles.css.map */
-/* selector { propiedad: valor} */
-
-/* Mi codigo CSS */
-
-/* CSS para todas las paginas */
-
-/* Hacemos un reset */
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing:border-box; /* Con esto hacemos que cada tamaño de caja de contenido ya incluya podding y margin */
+.navMenu a:hover {
+  color: #A63232;
 }
 
 html {
-    font-family: 'Roboto', sans-serif;
-}
-
-
-ul { 
-    list-style: none; /* borro los bullets */
-}
-
-.logo {
-    width: 150px; /* establezco el ancho del logo */
+  font-family: "Roboto", sans-serif;
 }
 
 h1.titulo {
-    color: #A63232;  /* Color del Titulo cuando es H1 */
-}
-
-.bgNosotros {
-    background-color: #FFFFFF; /* para probar colores cuando logre alinear el navigation */
-}
-
-/* CSS para pagina index */
-
-.cajasDestacadas{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.cajaItem {
-    border: 1px black solid;
-    display: flex;
-    width: 400px;
-    padding: 30px;
-    margin: 15px;
-    position: relative;
-    flex-direction: column;
-    align-items: center;
-    flex-wrap: wrap;
-    
-    
-}
-
-.contactoPresupuesto {
-
-    margin: 20px 0px;
-    background-color: #A63232;
-    color: #FFFFFF;
-    padding: 30px 20px;
-    display: flex;
-    justify-content: center;
-
-}
-.contactoPresupuesto a{
-    text-decoration: none;
-    color: #FFFFFF;
-}
-
-.contactoPresupuesto a:hover{
-    text-decoration: none;
-    color: #000000;
-}
-
-
-/* CSS para pagina services */
-
-.nuestrosServicios{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-.servicio {
-    border: 1px black solid;
-    width: 400px;
-    padding: 30px;
-    margin: 15px;
-    position: relative;
-    
-    
-}
-.servicioMasPedido {
-    position: absolute;
-    top:2px;
-    right:5px;
-    padding: 5px;
-    background-color:red;
-    box-shadow: 2px 2px 2px black;
-    border-radius: 25%;
-    color: #FFFFFF;
-
-}
-
-/* CSS para menu de navegacion */
-
-.navMenu {
-    display: flex;
-    z-index: 100; 
-    position: sticky;
-    top: 0px;
-    background-color: white;
-    justify-content: space-around;
-    width: 100%;
-    font-size: 30px;
-}
-
-.navMenu a:hover{
-    color: #A63232;
-}
-
-
-/* CSS generales */
-
-.tituloPrincipal {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-}
-.espaciado
-{
-    margin: 10px 0px;
-}
-
-.sliderPrincipal {
-    display: flex;
-}
-
-.slideItem {
-    display: flex;
-    position: relative;
-}
-
-.sliderPrincipal img{
-    max-width: 100%;
-}
-
-.iconColor {
-    color: #A63232;
-}
-
-.logosEmpresas {
-    width: 140px;
-}
-
-.mapa {
-    width: 100%;
-    height: 100%;
-}
-
-
-/* CSS para footer con grillas */
-
-.grid-container{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-items:center;
-    justify-content: center;
-
+  color: #A63232; /* Color del Titulo cuando es H1 */
 }
 
 footer .socials {
-    width: 30px; /* Limito el tamaño de las imagenes de las redes sociales */
+  width: 30px;
+  height: 30px;
 }
 
 footer p {
-    font-size: 0.8rem;
-    font-weight: 400;
+  font-size: 0.8rem;
+  font-weight: 400;
 }
 
-/* CSS para pagina de contacto */
+/* CSS Generales */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; /* Con esto hacemos que cada tamaño de caja de contenido ya incluya podding y margin */
+}
+
+ul {
+  list-style: none; /* borro los bullets */
+}
+
+/* CSS para pagina index */
+.cajasDestacadas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.cajaItem {
+  border: 1px black solid;
+  display: flex;
+  width: 400px;
+  padding: 30px;
+  margin: 15px;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.contactoPresupuesto {
+  margin: 20px 0px;
+  background-color: #A63232;
+  color: #FFFFFF;
+  padding: 30px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.contactoPresupuesto a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+.contactoPresupuesto a:hover {
+  text-decoration: none;
+  color: #000000;
+}
+
+/* CSS para pagina services */
+.nuestrosServicios {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.servicio {
+  border: 1px #000000 solid;
+  width: 400px;
+  padding: 30px;
+  margin: 15px;
+  position: relative;
+}
+
+.servicioMasPedido {
+  position: absolute;
+  top: 2px;
+  right: 5px;
+  padding: 5px;
+  background-color: #FF0000;
+  box-shadow: 2px 2px 2px #000000;
+  border-radius: 25%;
+  color: #FFFFFF;
+}
+
+.tituloPrincipal {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.espaciado {
+  margin: 10px 0px;
+}
+
+.sliderPrincipal {
+  display: flex;
+}
+
+.slideItem {
+  display: flex;
+  position: relative;
+}
+
+.sliderPrincipal img {
+  max-width: 100%;
+}
+
+.iconColor {
+  color: #A63232;
+}
+
+.logosEmpresas {
+  width: 140px;
+}
+
+.mapa {
+  width: 100%;
+  height: 100%;
+}
 
 form#contacto label {
-    color: #A63232;
-    font-size: 1.2rem;
-    font-weight: 600;
+  color: #A63232;
+  font-size: 1.2rem;
+  font-weight: 600;
 }
 
-@media only screen and (max-width:500px) {
-    /* Que en mobile el texto sea mas chico */
-    .navMenu a {
-        font-size: 15px;
-    }
-
-    .navMenu {
-        background-color: lightgrey;
-    }
-
-    .sliderPpal {
-        display: none;
-    }
-
-    .mapa {
-        height: 400px;
-    }
+@media only screen and (max-width: 500px) {
+  /* Que en mobile el texto sea mas chico */
+  .navMenu a {
+    font-size: 15px;
+  }
+  .navMenu {
+    background-color: lightgrey;
+  }
+  .sliderPpal {
+    display: none;
+  }
+  .mapa {
+    height: 400px;
+  }
+}
+@media only screen and (min-width: 501px) and (max-width: 999px) {
+  .mapa {
+    height: 400px;
+  }
 }
 
-@media only screen and (min-width:501px) and (max-width:999px) {
-    .mapa {
-        height: 400px;
-    }
- }
+/*# sourceMappingURL=styles.css.map */
