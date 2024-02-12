@@ -39,6 +39,74 @@ footer p {
   font-weight: 400;
 }
 
+.botonPpal {
+  background-image: linear-gradient(to right, #FF0000, #000000);
+}
+
+.botonPpal:hover {
+  background-image: linear-gradient(to right, #000000, #FF0000);
+  transform: scale(1.2, 1.2);
+}
+
+@keyframes efectoBordeLoco {
+  0% {
+    border: #000000 solid 3px;
+  }
+  10% {
+    border: gray solid 3px;
+  }
+  20% {
+    border: #FF0000 solid 3px;
+  }
+  30% {
+    border: #A63232 solid 3px;
+  }
+  40% {
+    border: #000000 solid 3px;
+  }
+  50% {
+    border: gray solid 3px;
+  }
+  60% {
+    border: #FF0000 solid 3px;
+  }
+  70% {
+    border: #A63232 solid 3px;
+  }
+  80% {
+    border: #000000 solid 3px;
+  }
+  90% {
+    border: gray solid 3px;
+  }
+  100% {
+    border: #FF0000 solid 3px;
+  }
+}
+.cajaAnimada {
+  animation-name: efectoBordeLoco;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+  animation-duration: 3s;
+  animation-delay: 1s;
+}
+
+@keyframes efectoLink {
+  from {
+    color: #FFFFFF;
+  }
+  to {
+    color: #FF0000;
+  }
+}
+.linkAnimado {
+  animation-name: efectoLink;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+  animation-duration: 1s;
+  animation-delay: 0s;
+}
+
 /* CSS Generales */
 * {
   padding: 0;
@@ -58,10 +126,10 @@ ul {
 }
 
 .cajaItem {
-  border: 1px black solid;
+  border: 3px black solid;
   display: flex;
-  width: 400px;
-  padding: 30px;
+  width: 350px;
+  padding: 25px;
   margin: 15px;
   position: relative;
   flex-direction: column;
@@ -144,6 +212,11 @@ ul {
 
 .logosEmpresas {
   width: 140px;
+  transition: all 0.2s;
+}
+
+.logosEmpresas:hover {
+  width: 200px;
 }
 
 .mapa {

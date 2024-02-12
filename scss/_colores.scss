@@ -7,3 +7,8 @@ $colorBlanco: #FFFFFF;
 $colorNegro: #000000;
 
 $colorRojo: #FF0000;
+
+$colorGris: gray;
+
+$gradPpal: linear-gradient(to right, $colorRojo, $colorNegro);
+$gradPpalRev: linear-gradient(to right, $colorNegro,$colorRojo);
