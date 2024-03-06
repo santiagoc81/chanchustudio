@@ -16,7 +16,9 @@
   width: 100%;
   font-size: 30px;
 }
-
+.navMenu a {
+  color: #1d1d1d;
+}
 .navMenu a:hover {
   color: #A63232;
 }
@@ -39,13 +41,16 @@ footer p {
   font-weight: 400;
 }
 
-.botonPpal {
+.botonPpal, .boton-servicios {
   background-image: linear-gradient(to right, #FF0000, #000000);
 }
-
-.botonPpal:hover {
+.botonPpal:hover, .boton-servicios:hover {
   background-image: linear-gradient(to right, #000000, #FF0000);
   transform: scale(1.2, 1.2);
+}
+
+.boton-servicios {
+  background-image: linear-gradient(to right, #1d1d1d, #FF0000);
 }
 
 @keyframes efectoBordeLoco {
@@ -253,6 +258,11 @@ form#contacto label {
 @media only screen and (min-width: 501px) and (max-width: 999px) {
   .mapa {
     height: 400px;
+  }
+}
+@media only screen and (min-width: 501px) and (max-width: 768px) {
+  .nosotros {
+    display: none;
   }
 }
 
